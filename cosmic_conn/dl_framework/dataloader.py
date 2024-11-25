@@ -708,7 +708,7 @@ class LCO_NRES_Dataset(Dataset):
 
         # special handling certain telescopes with boundary issues
         # remove 100px around the boundary in image and mask
-        edge_width = 100
+        edge_width = 0 # Edited for KCRM data
 
         frames = erase_boundary_np(frames, edge_width)
         cr_masks = erase_boundary_np(cr_masks, edge_width)

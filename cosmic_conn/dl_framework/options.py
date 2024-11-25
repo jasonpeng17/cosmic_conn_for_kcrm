@@ -18,7 +18,8 @@ class ModelOptions():
         self.__dict__["model"] = "lco"
         self.__dict__["loss"] = 0
         self.__dict__["imbalance_alpha"] = 100.0
-        self.__dict__["norm"] = "group"
+        # self.__dict__["norm"] = "group"
+        self.__dict__["norm"] = "batch"
         self.__dict__["no_affine"] = False
         self.__dict__["n_group"] = 8
         self.__dict__["gn_channel"] = 0
